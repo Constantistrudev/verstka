@@ -1,0 +1,144 @@
+:root{
+    --text:#fff;
+    --actient:#EE8313;
+    --actienthover:#d16f07;
+    --bg_page:#000;
+    --bg_card:#171717;
+    --bg_footer:#1F1905;
+}
+body{
+    color: var(--text);
+    background-color: var(--bg_page);
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+.link {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.link:hover{
+    text-decoration: underline;
+    color: var(--actient);
+    transition: 200ms;
+}
+.button {
+    border: 0;
+    color: var(--text);
+    background-color: var(--actient);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    padding: 12px 24px;
+}
+.button:hover{
+    background-color: var(--actienthover);
+    transition: 200ms;
+}
+
+.button_inversed {
+    background-color: var(--bg_page);
+    border:1px solid var(--actient);
+    color: var(--actient);
+}
+.title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/* ------------------ */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+/* -----------------*/
+.header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-placeholder {
+}
+.navigation-bar ul{
+    display: inline-flex;
+}
+
+.navigation-bar li+li{
+    margin-left: 48px;
+}
+.navigation-bar__link {
+}
+/* ---------------------- */
+.home-page {
+    display: flex;
+    justify-content: space-between;
+}
+.home-page__content {
+    max-width: 474px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+.home-page__content button+button{
+    margin-left: 35px;
+}
+.home-page__text{
+    margin-bottom: 32px;
+}
+.home-page__text >h1{
+    margin-bottom: 32px;
+}
+.home-page__achivements {
+    margin-top: 40px;
+}
+.home-page__achivements .achivements__achivement+.achivements__achivement{
+    margin-left: 40px;
+}
+.achivements__achivement {
+    display: inline-flex;
+    align-items:baseline;
+}
+.achivement__title {
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.0041em;
+    padding-right: 16px;
+}
+.achivement__text {
+}
+/* ------------------------ */
+.home-page__image-part {
+position: relative;
+}
+/* .image-part__bg{
+    width: 720px;
+    height: 524px;
+    background-color: var(--bg_card);
+    position: absolute;
+    z-index: 0;
+    right: -70;
+} */
+.car-img{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    /*  animation right: -753px;
+top: -123px; */
+}
+.map{
+}
