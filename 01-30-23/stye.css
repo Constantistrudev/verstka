@@ -3,8 +3,11 @@
     --actient:#EE8313;
     --actienthover:#d16f07;
     --bg_page:#000;
-    --bg_card:#171717;
+    --bg_card:#131313;
     --bg_footer:#1F1905;
+}
+span{
+    color: var(--actient);
 }
 body{
     color: var(--text);
@@ -25,7 +28,7 @@ body{
 .link:hover{
     text-decoration: underline;
     color: var(--actient);
-    transition: 200ms;
+    transition: 150ms linear;
 }
 .button {
     border: 0;
@@ -48,10 +51,15 @@ body{
     color: var(--actient);
 }
 .title {
+    max-width: 600px;
     font-weight: 700;
     font-size: 52px;
     line-height: 64px;
     letter-spacing: 0.006em;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    margin: 0 auto;
+
 }
 .subtitle {
     font-weight: 400;
@@ -60,6 +68,14 @@ body{
     letter-spacing: -0.408px;
     color: #FFFFFF;
     opacity: 0.8;
+}
+.text-bold{
+    font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+}
+p img{
+    padding-right:12px ;
 }
 /* ------------------ */
 .wrapper {
@@ -74,6 +90,11 @@ body{
     justify-content: space-between;
 }
 .logo-placeholder {
+    display: inline-flex;
+    align-items: center;
+}
+.logo-placeholder *+*{
+    padding-left: 17px;
 }
 .navigation-bar ul{
     display: inline-flex;
@@ -91,7 +112,6 @@ body{
 }
 .home-page__content {
     max-width: 474px;
-    margin-bottom: 120px;
     align-items: center;
 }
 .home-page__content button+button{
@@ -140,5 +160,94 @@ position: relative;
     /*  animation right: -753px;
 top: -123px; */
 }
+/* ------------------------------- */
+.Rent-a-car {
+}
+.cards-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 32px;
+
+}
+.cards-container_small-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 4px;
+    grid-auto-flow: row;
+
+}
+
+.card {
+    position: relative;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+
+}
+.card .photo{
+    background: #000;  /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+    overflow: hidden;  /* Ограничиваем видиую область */
+}
+.card .photo img{
+    opacity: 1;
+    transition: opacity 150ms linear, transform 150ms linear;
+	width: 100%;
+	height: auto;
+    display: block;
+}
+.card:hover .photo img{
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.card {
+    margin: 0 10px 0 10px;
+}
+.card-title {
+    position: absolute;
+    left: 48px;top: 48px;
+}
+.card-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    position: absolute;
+    right: 48px;
+    bottom: 48px;
+}
+.card_small{
+
+}
+.card-title_small{
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 100%;
+    padding-bottom: 16px;
+    padding-top: 24px;
+}
+.card-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 100%;
+    opacity: 0.8;
+}
+.card_grey{
+    background-color: var(--bg_card);
+}
+.card__text-block{
+    padding: 0 24px 24px 24px;
+}
+/* ----------------------------------- */
+.card_span-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--actient);
+}
+/* --------------------------------- */
 .map{
 }
