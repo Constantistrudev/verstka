@@ -1,7 +1,7 @@
 :root{
     --text:#fff;
     --actient:#EE8313;
-    --actienthover:#d16f07;
+    --actienthover:#6D3B27;
     --bg_page:#000;
     --bg_card:#131313;
     --bg_footer:#1F1905;
@@ -200,7 +200,7 @@ top: -123px; */
 }
 .card:hover .photo img{
     opacity: 0.9;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .card {
@@ -250,4 +250,48 @@ top: -123px; */
 }
 /* --------------------------------- */
 .map{
+}
+/* ---------------- */
+.footer{
+    display: flex;
+    justify-content: space-around  ;
+    align-items: flex-start;
+    background-color: var(--bg_footer );
+}
+footer p{
+    max-width: 235px;
+}
+.footer__nav-container{
+    padding-top: 80px;
+    padding-bottom: 66px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%  ;
+    max-width: 100%;
+    align-items: stretch;
+}
+.footer__nav-container nav+nav{
+
+}
+.footer__navigation{
+    
+}
+.footer__navigation li+li{
+    margin-top: 32px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+footer div .logo-placeholder{
+    padding-top: 66px
+}
+.footer__text{
+margin-top: 66px;
+}
+.bottom{
+    background-color: var(--actient);
+    text-align: center;
+    font-weight: 400;
+}
+.bottom p {
+    padding: 20px 0;
 }
